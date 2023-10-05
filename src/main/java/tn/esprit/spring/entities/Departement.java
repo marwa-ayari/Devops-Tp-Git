@@ -16,6 +16,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 @Entity
+@Getter
+@Setter
 public class Departement implements Serializable {
 
 	private static final long serialVersionUID = -357738161698377833L;
@@ -41,37 +43,7 @@ public class Departement implements Serializable {
 		this.name = name;
 	}
 	 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public List<Employe> getEmployes() {
-		return employes;
-	}
-
-	public void setEmployes(List<Employe> employes) {
-		this.employes = employes;
-	}
-
-	public Entreprise getEntreprise() {
-		return entreprise;
-	}
-
-	public void setEntreprise(Entreprise entreprise) {
-		this.entreprise = entreprise;
-	}
+	
 	 
 }
  
